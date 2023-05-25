@@ -9,8 +9,8 @@ public class MouseLook : MonoBehaviour
     public Vector2 clampInDegrees = new Vector2(360, 180);
     public bool lockCursor;
 
-    public Vector2 sensitivity = new Vector2(2, 2);
-    public Vector2 smoothing = new Vector2(3, 3);
+    public Vector2 sensitivity = new Vector2(0.1f, 0.1f);
+    public Vector2 smoothing = new Vector2(1f, 1f);
     Vector2 targetDirection;
     Vector2 targetCharacterDirection;
 
