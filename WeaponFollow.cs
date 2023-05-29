@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class WeaponFollow : MonoBehaviour
 {
-    public PlayerControls _input;
+    public PlayerControls input;
 
     [SerializeField]
     float rotateSpeed = 4f;
@@ -12,13 +12,13 @@ public class WeaponFollow : MonoBehaviour
 
     private void OnEnable()
     {
-        _input = new PlayerControls();
-        _input.Enable();
+        input = new PlayerControls();
+        input.Enable();
     }
 
     void Update()
     {
-        Vector2 mouseInput = _input.Player.MouseLook.ReadValue<Vector2>();
+        Vector2 mouseInput = input.Player.MouseLook.ReadValue<Vector2>();
 
         ApplyRotation(GetRotation(mouseInput));
     }
